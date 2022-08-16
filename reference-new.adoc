@@ -1,0 +1,213 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.6 enthält mehrere neue Funktionen und Verbesserungen. 
+---
+= Was ist neu in Cloud Volumes ONTAP 9.6
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.6 enthält mehrere neue Funktionen und Verbesserungen.
+
+Zusätzliche Funktionen und Verbesserungen sind auch in den neuesten Versionen von Cloud Manager eingeführt. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise Zu Cloud Manager"^] Entsprechende Details.
+
+
+
+== 9.6 P8 (2. Juni 2020)
+
+Der P8-Patch 9.6 für Cloud Volumes ONTAP ist nun über Cloud Manager 3.8 und höher erhältlich. Cloud Manager fordert Sie auf, Ihre vorhandenen Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P8["Zeigen Sie die Liste der im P8-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== 9.6 P7 (8. April 2020)
+
+Der P7-Patch 9.6 für Cloud Volumes ONTAP ist nun über Cloud Manager 3.8 und höher erhältlich. Cloud Manager fordert Sie auf, Ihre vorhandenen Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P7["Zeigen Sie die Liste der im P7-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== 9.6 P6 (6. März 2020)
+
+Der P6-Patch 9.6 für Cloud Volumes ONTAP ist nun über Cloud Manager 3.8 und höher verfügbar. Cloud Manager fordert Sie auf, Ihre vorhandenen Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P6["Zeigen Sie die Liste der im P6-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== AWS Updates (16. Feb. 2020)
+
+Unterstützung für neue EC2 Instanzen und eine Änderung der Anzahl unterstützter Datenfestplatten sind eingeführt.
+
+
+
+=== Unterstützung für neue Instanzen
+
+Einige neue EC2-Instanztypen werden nun mit Cloud Volumes ONTAP 9.6 unterstützt, wenn eine Premium- oder BYOL-Lizenz verwendet wird:
+
+* C5.9xlarge
+* C5d.18xlarge ^1,2^
+* M5d.8xlarge ^1,2^
+
+
+^1^ zu diesen Instanztypen gehört lokaler NVMe-Storage, der Cloud Volumes ONTAP als _Flash Cache_ verwendet. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["Weitere Informationen ."^].
+
+^2^ Diese Instanztypen werden in 9.6 P3 und höher unterstützt.
+
+https://aws.amazon.com/ec2/instance-types/["Weitere Informationen zu diesen EC2 Instanztypen"^].
+
+link:reference-configs-aws.html["Hier erhalten Sie weitere Informationen zu unterstützten 9.6 Konfigurationen in AWS"].
+
+
+
+=== Unterstützte Datenfestplatten
+
+Eine Datenfestplatte weniger wird nun für c5-, m5- und r5-Instanzen unterstützt. Bei Single Node-Systemen werden 22 Datenfestplatten unterstützt. Bei HA-Paaren werden pro Node 19 Datenfestplatten unterstützt.
+
+link:reference-limits-aws.html["Erfahren Sie mehr über Storage-Limits in AWS"].
+
+
+
+== Support für DS15_v2 in Azure (12. Feb 2020)
+
+Cloud Volumes ONTAP wird jetzt mit dem virtuellen Maschinentyp DS15_v2 in Azure unterstützt, sowohl auf Single Node-Systemen als auch auf HA-Paaren.
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Weitere Informationen zur DSv2 Serie"^].
+
+link:reference-configs-azure.html["Hier erhalten Sie weitere Informationen zu unterstützten 9.6 Konfigurationen in Azure"].
+
+
+
+== 9.6 P5 (26. Dezember 2019)
+
+Die 9.6 P5-Patch-Version für Cloud Volumes ONTAP ist nun über Cloud Manager verfügbar. Cloud Manager fordert Sie auf, Ihre vorhandenen Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P5["Zeigen Sie die Liste der im P5-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== 9.6 P4 (14. November 2019)
+
+Das Patch-Release 9.6 P4 für Cloud Volumes ONTAP ist nun über Cloud Manager verfügbar. Cloud Manager fordert Sie auf, Ihre vorhandenen Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P4["Hier finden Sie eine Liste der im P4-Patch fixierten Fehler"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== 9.6 P3 (23. Okt. 2019)
+
+Der 9.6 P3-Patch für Cloud Volumes ONTAP ist jetzt über Cloud Manager verfügbar. Cloud Manager fordert Sie auf, vorhandene Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P3["Zeigen Sie die Liste der im P3-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+Zusätzlich zu den Fehlerbehebungen bietet diese Version auch folgende Funktionen:
+
+* Unterstützung für den Instanztyp c5.18xlarge in AWS.
+* Eine Steigerung der maximalen Aggregatgröße auf Single-Node-Systemen in Azure: 352 TB Rohkapazität wird nun unterstützt.
++
+Die maximale Aggregatgröße für ein Single-Node-System betrug bisher 200 TB.
+
+
+
+
+
+== Pay-as-you-go-Abonnements im Google Cloud Marketplace (6. Oktober 2019)
+
+Wenn Sie Cloud Volumes ONTAP im Google Cloud Platform Marketplace abonnieren, können Sie Cloud Volumes ONTAP jetzt bezahlen.
+
+https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?q=NetApp&id=8108721b-10e5-48be-88ed-387031dae492["Google Cloud Platform Marketplace: Cloud Manager für Cloud Volumes ONTAP"^]
+
+
+
+== Allgemeine Verfügbarkeit von Cloud Volumes ONTAP in Google Cloud (3. Sept. 2019)
+
+Cloud Volumes ONTAP ist ab sofort in der Google Cloud Platform (Google Cloud) mit eigener Lizenz (BYOL) verfügbar. Außerdem ist eine Pay-as-you-go-Aktion verfügbar. Das Angebot bietet kostenlose Lizenzen für eine unbegrenzte Anzahl von Systemen und läuft Ende September 2019 ab.
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Erfahren Sie, wie Sie mit Google Cloud starten"^]
+* link:reference-configs-gcp.html["Zeigen Sie unterstützte Konfigurationen an"]
+
+
+
+
+== 9.6 P2 (29. August 2019)
+
+Der 9.6 P2 Patch für Cloud Volumes ONTAP ist jetzt über Cloud Manager erhältlich. Cloud Manager fordert Sie auf, Ihre 9.5- und 9.6-Systeme auf diese Patch-Version zu aktualisieren. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.6P2["Zeigen Sie die Liste der im P2-Patch fixierten Fehler an"^] (Anmeldung auf der NetApp Support Site erforderlich).
+
+
+
+== 9.6 GA (15. Juli 2019)
+
+Das Release von Cloud Volumes ONTAP 9.6 (General Availability, GA) ist jetzt verfügbar. Die GA-Version enthält Bug Fixes. Cloud Manager fordert Sie zum Upgrade Ihrer vorhandenen Systeme auf diese Version auf.
+
+
+NOTE: Cloud Volumes ONTAP bleibt in der Google Cloud Platform als private Vorschau verfügbar.
+
+
+
+== 9.6 RC1 (16. Juni 2019)
+
+Cloud Volumes ONTAP 9.6 RC1 ist jetzt in AWS, Azure und Google Cloud Platform verfügbar. Diese Version umfasst die folgenden Funktionen:
+
+*  preview of Cloud Volumes ONTAP in Google Cloud Platform
+*  tiering with HA pairs in Azure
+*  for FlexCache volumes
+*  ONTAP changes
+
+
+
+
+=== Exklusive Vorschau auf Cloud Volumes ONTAP in der Google Cloud Platform
+
+Eine exklusive Vorschau auf Cloud Volumes ONTAP in der Google Cloud Platform ist jetzt verfügbar. Ähnlich wie andere Cloud-Provider können Sie mit Cloud Volumes ONTAP für Google Cloud Platform Kosten senken, die Performance verbessern und die Verfügbarkeit erhöhen.
+
+Cloud Volumes ONTAP ist in Google Cloud als Single-Node-System erhältlich und unterstützt Daten-Tiering auf Objekt-Storage.
+
+Um an der privaten Vorschau teilzunehmen, senden Sie eine Anfrage an ng-Cloud-Volume-ONTAP-preview@netapp.com.
+
+
+
+=== Daten-Tiering mit HA-Paaren in Azure
+
+Daten-Tiering wird nun mit Cloud Volumes ONTAP HA-Paaren in Microsoft Azure unterstützt. Das Daten-Tiering ermöglicht ein automatisiertes Tiering inaktiver Daten auf kostengünstigen Blob-Storage.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Erfahren Sie, wie Sie Daten-Tiering in Cloud Manager einrichten"^].
+
+
+
+=== Unterstützung für FlexCache Volumes
+
+Ein FlexCache Volume ist ein Storage Volume, das NFS-gelesene Daten aus einem Ursprungs-Volume (oder Quell-Volume) zwischenspeichert. Nachfolgende Lesezugriffe auf die zwischengespeicherten Daten führen zu einem schnelleren Zugriff auf diese Daten.
+
+FlexCache Volumes beschleunigen den Zugriff auf Daten oder verlagern den Datenverkehr von Volumes, auf die stark zugegriffen wird. FlexCache Volumes tragen zu einer besseren Performance bei, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen, da die Daten direkt ohne Zugriff auf das Ursprungs-Volume bereitgestellt werden können. FlexCache Volumes eignen sich gut für leseintensive System-Workloads.
+
+Cloud Manager bietet derzeit kein Management von FlexCache Volumes, aber ONTAP CLI oder ONTAP System Manager ermöglicht die Erstellung und das Management von FlexCache Volumes:
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["FlexCache Volumes für schnelleren Datenzugriff – Power Guide"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["FlexCache Volumes werden in System Manager erstellt"^]
+
+
+Ab Version 3.7.2 generiert Cloud Manager eine FlexCache Lizenz für alle neuen Cloud Volumes ONTAP Systeme. Die Lizenz umfasst ein Nutzungslimit von 500 gib.
+
+
+
+=== Weitere ONTAP-Änderungen
+
+ONTAP 9.6 enthält weitere Änderungen, die Cloud Volumes ONTAP Benutzer möglicherweise interessieren:
+
+* Die SnapMirror Replizierung unterstützt jetzt die Verschlüsselung von TLS 1.2 für die Kommunikation während der Übertragung
+* Verbesserungen für das Data Tiering (FabricPool):
++
+** Volume-Verschiebung ohne erneutes Tiering von weniger häufig benötigten Daten
+** Disaster-Recovery-Unterstützung für SVM
+
+
+
+
+Weitere Informationen zur Version 9.6 finden Sie im https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Versionshinweise zu ONTAP 9"^].
+
+
+
+== Upgrade-Hinweise
+
+* Upgrades von Cloud Volumes ONTAP müssen von Cloud Manager abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
+* Sie können ein Upgrade von Version 9.5 auf Cloud Volumes ONTAP 9.6 durchführen.
+* Das Upgrade eines einzelnen Node-Systems nimmt das System für bis zu 25 Minuten offline, während dieser I/O-Unterbrechung erfolgt.
+* Das Upgrade eines HA-Paars erfolgt unterbrechungsfrei und die I/O wird unterbrochen. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node entsprechend aktualisiert, um den I/O-Datenverkehr für die Clients weiterhin bereitzustellen.
+

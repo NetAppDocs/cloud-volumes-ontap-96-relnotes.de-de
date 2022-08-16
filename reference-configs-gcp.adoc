@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-gcp.html 
+keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes 
+summary: 'Cloud Volumes ONTAP ist in der Google Cloud Platform als Single Node System erhältlich. Es sind zwei Preisoptionen verfügbar: Nutzungsbasiert (Pay as you go) und BYOL (Bring-Your-Own-License).' 
+---
+= Unterstützte Konfigurationen in Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP ist in der Google Cloud Platform als Single Node System erhältlich. Es sind zwei Preisoptionen verfügbar: Nutzungsbasiert bezahlen und BYOL (Bring Your Own License).
+
+
+
+== Pay-as-you-go-Übersicht
+
+* Cloud Volumes ONTAP wird in drei verschiedenen Lizenzoptionen angeboten: Explore, Standard und Premium.
+* Für das erste Cloud Volumes ONTAP System, das Sie in Google Cloud implementieren, steht eine kostenlose 30-Tage-Testversion zur Verfügung.
++
+** Es fallen keine stündlichen Software-Gebühren an, allerdings fallen für die Google Cloud Infrastruktur weiterhin Gebühren an (Computing, Storage und Netzwerk).
+** Wenn die kostenlose Testversion endet, wird Ihnen die Abrechnung auf Stundenbasis gemäß der ausgewählten Lizenz berechnet. https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager["Solange Sie abonniert haben"^]. Wenn Sie sich nicht angemeldet haben, wird das System heruntergefahren.
+
+
+* Konvertierungen von PAYGO zu BYOL werden derzeit nicht unterstützt.
+* Es wird zwar grundlegender technischer Support angeboten, Sie müssen jedoch die mit Ihrem System verknüpfte NetApp Seriennummer registrieren und aktivieren.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Registrieren Sie die nutzungsbasierten Systeme in Cloud Manager"^]
+
+
+
+
+
+== Byol-Übersicht
+
+* Single-Node-Lizenz mit Laufzeitoptionen wie z. B. 12 Monate, 24 Monate oder mehr
+* Für die Dauer der Abonnementlaufzeit ist der Support inbegriffen.
+* Sie können mehrere Lizenzen für ein Cloud Volumes ONTAP BYOL-System erwerben und so mehr als 368 TB Kapazität zuweisen.
++
+Beispielsweise können Sie zwei Lizenzen erwerben, um Cloud Volumes ONTAP bis zu 736 TB Kapazität zuzuweisen. Alternativ können Sie vier Lizenzen erwerben, um bis zu 1.4 PiB zu erhalten.
+
+
+
+
+
+== Unterstützte Konfigurationen nach Lizenz
+
+Cloud Volumes ONTAP ist in der Google Cloud Platform als Single Node System erhältlich.
+
+[cols="h,d,d,d,d"]
+|===
+|  | Entdecken | Standard | Premium | BYOL 
+
+
+| Unterstützte Maschinentypen ^1^ | Custom-4-16384 | n1-Standard-8 | n1-Standard-32  a| 
+* Custom-4-16384
+* n1-Standard-8
+* n1-Standard-32
+
+
+
+
+| Unterstützte Festplattentypen ^2^ 4+| Persistente zonale Festplatten (SSD und Standard) 
+
+
+| Tiering kalter Daten auf Objektspeicher | Nicht unterstützt 3+| Unterstützt 
+
+
+| Maximale Systemkapazität (Festplatten + Objekt-Storage) | 2 TB | 10 TB | 368 TB ^3^ | 368 TB pro Lizenz ^3^ 
+|===
+Hinweise:
+
+. Der benutzerdefinierte Maschinentyp verfügt über 4 vCPUs und 16 GB Speicher. Weitere Informationen zu Standardmaschinentypen finden Sie unter https://cloud.google.com/compute/docs/machine-types#standard_machine_types["Google Cloud-Dokumentation: Maschinentypen"^].
+. Bei Verwendung von SSDs ist die verbesserte Schreib-Performance aktiviert.
+. Durch Festplattenbeschränkungen kann das Kapazitätslimit von 368 TB nicht erreicht werden, dass Sie nur Festplatten verwenden. Sie können die Kapazitätsgrenze von 368 TB um erreichen https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering inaktiver Daten in Objektspeicher"^].
++
+link:reference-limits-gcp.html["Weitere Informationen zu Festplattenlimits finden Sie in Google Cloud"].
+
+. Informationen über die regionale Unterstützung von Google Cloud-Plattformen finden Sie unter https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regionen Weltweit"^].
+
+
+
+
+== Unterstützte Festplattengrößen
+
+In Google Cloud kann ein Aggregat bis zu 6 Festplatten enthalten, die vom gleichen Typ und derselben Größe sind. Folgende Festplattengrößen werden unterstützt:
+
+* 100 GB
+* 500 GB
+* 1 TB
+* 2 TB
+* 4 TB
+* 8 TB
+* 16 TB
+
