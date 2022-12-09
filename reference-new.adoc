@@ -145,10 +145,10 @@ NOTE: Cloud Volumes ONTAP bleibt in der Google Cloud Platform als private Vorsch
 
 Cloud Volumes ONTAP 9.6 RC1 ist jetzt in AWS, Azure und Google Cloud Platform verfügbar. Diese Version umfasst die folgenden Funktionen:
 
-*  preview of Cloud Volumes ONTAP in Google Cloud Platform
-*  tiering with HA pairs in Azure
-*  for FlexCache volumes
-*  ONTAP changes
+* <<Exklusive Vorschau auf Cloud Volumes ONTAP in der Google Cloud Platform>>
+* <<Daten-Tiering mit HA-Paaren in Azure>>
+* <<Unterstützung für FlexCache Volumes>>
+* <<Weitere ONTAP-Änderungen>>
 
 
 
