@@ -26,19 +26,6 @@ Die maximale Anzahl gleichzeitiger SnapMirror oder SnapVault Transfers für Clou
 
 
 
-== Unterstützung in China Regionen
-
-Cloud Volumes ONTAP wird in China wie folgt unterstützt.
-
-* Cloud Volumes ONTAP 9.6 wird in AWS-China-Regionen unterstützt.
-* Systeme mit Single Node werden unterstützt.
-* Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
-
-
-Alle anderen Standorte, Versionen, Konfigurationen und Lizenzen werden nicht unterstützt.
-
-
-
 == Software-Updates müssen von Cloud Manager abgeschlossen werden
 
 Upgrades von Cloud Volumes ONTAP müssen von Cloud Manager abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
