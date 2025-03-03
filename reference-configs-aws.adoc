@@ -94,7 +94,7 @@ Hinweise:
 . Bei Verwendung von SSDs mit Cloud Volumes ONTAP Standard, Premium und BYOL wird eine verbesserte Schreib-Performance aktiviert.
 . gp3-SSDs werden nicht unterstützt.
 . Bei einigen HA-Konfigurationen verhindern Festplatten-Limits, dass Sie das Kapazitätslimit von 368 tib erreichen, indem Sie Festplatten allein verwenden. In diesen Fällen können Sie das Kapazitätslimit von 368 tib erreichen https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering inaktiver Daten in Objektspeicher"^]. Weitere Informationen zu Festplattenlimits finden Sie unter link:reference-limits-aws.html["Storage-Beschränkungen"].
-. Informationen zu regionalen Support für AWS finden Sie unter https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regionen Weltweit"^].
+. Informationen zur Unterstützung der AWS Region finden Sie unter https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regionen Weltweit"^].
 
 
 

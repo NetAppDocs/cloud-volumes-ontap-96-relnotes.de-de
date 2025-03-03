@@ -81,7 +81,7 @@ Hinweise:
 +
 link:reference-limits-gcp.html["Weitere Informationen zu Festplattenlimits finden Sie in Google Cloud"].
 
-. Informationen über die regionale Unterstützung von Google Cloud-Plattformen finden Sie unter https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regionen Weltweit"^].
+. Informationen zur regionalen Unterstützung von Google Cloud Platform finden Sie unter https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regionen Weltweit"^].
 
 
 
